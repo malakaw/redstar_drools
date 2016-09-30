@@ -2,6 +2,7 @@ drools 使用记录,建议用intellij来开发,支持drl高亮和跳转
 
 
 # 第一个简单的入门demo
+## 文件
 <pre><code>
 //参与规则计算的java类
 main/java/com.franco.demo.drools.Account
@@ -14,6 +15,7 @@ test/java/com.franco.demo.drools.AccountTest
 
 
 在drools中，这个传递数据进去的对象，术语叫 Fact对象,上面的Account就是fact.规则中可以对当前的对象进行任何的读写操作.
+## 规则文件
 <pre><code>
 	import com.franco.demo.drools.Account
 
@@ -30,7 +32,7 @@ end
 上面的代码中Account，就是可以  $account : Account( balance < 0 )的方式获取并判断比较。
 
 
-运行结果
+执行test/java/com.franco.demo.drools.AccountTest运行结果
 <pre><code>
 Warning! money running out!
 Warning! money <30 out!
