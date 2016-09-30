@@ -15,7 +15,7 @@ public class AccountTest {
 
 
     @Test
-    public void testCheckDlzh() throws Exception {
+    public void testAccount() throws Exception {
         KnowledgeBuilder kbuilder = KnowledgeBuilderFactory.newKnowledgeBuilder();
 
         kbuilder.add(ResourceFactory.newClassPathResource("drools/r1.drl"), ResourceType.DRL);
