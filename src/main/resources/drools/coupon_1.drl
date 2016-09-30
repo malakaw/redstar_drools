@@ -1,0 +1,43 @@
+package demo
+import com.franco.demo.drools.coupon.SubtractCoupon
+import com.franco.demo.drools.coupon.Coupon
+import com.franco.demo.drools.CouponContext
+import com.franco.demo.drools.facts.SubtractCouponFact
+import java.math.BigDecimal
+
+
+
+rule "coupon_subtract"
+  salience 5
+  lock-on-active true
+  when
+      $f:SubtractCouponFact((in_order_price > 100));
+  then
+      System.out.println( CouponContext.getIntance().getCoupon("c1").getCount_trigger() );
+      System.out.println(CouponContext.getIntance().getCoupon("c1").getDate_effective());
+      $f.setOut_result_price($f.getIn_order_price().subtract(CouponContext.getIntance().getCoupon("c1").getCount_preferential()));
+end
+
+
+//rule "coupon_subtract"
+//  salience 5
+//  lock-on-active true
+//  when
+//      $f:SubtractCouponFact(now >= CouponContext.getCoupon("c1").getNow()
+//                            &&
+//                            (in_order_price > 100));
+//  then
+//      $f.setOut_result_price($f.getIn_order_price().subtract(new BigDecimal(10)));
+//end
+
+
+
+//rule "coupon_cach"
+//  salience 4
+//  lock-on-active true
+//  when
+//      $f:SubtractCouponFact(now >= CouponContext.getEffectiveDate(2) );
+//  then
+//      $f.setOut_result_price($f.getIn_order_price().subtract(new BigDecimal(50)));
+//end
+

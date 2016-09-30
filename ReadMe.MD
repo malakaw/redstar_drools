@@ -14,7 +14,7 @@ test/java/com.franco.demo.drools.AccountTest
 
 
 在drools中，这个传递数据进去的对象，术语叫 Fact对象,上面的Account就是fact.规则中可以对当前的对象进行任何的读写操作.
-## 规则文件
+## 规则文件r1.drl
 <pre><code>
 import com.franco.demo.drools.Account
 rule "accountBalanceAtLeast"
