@@ -8,7 +8,6 @@ drools 使用记录,建议用intellij来开发,支持drl高亮和跳转
 main/java/com.franco.demo.drools.Account
 //规则文件
 main/resources/drools/r1.drl
-
 //测试类
 test/java/com.franco.demo.drools.AccountTest
 </code></pre>
@@ -17,8 +16,7 @@ test/java/com.franco.demo.drools.AccountTest
 在drools中，这个传递数据进去的对象，术语叫 Fact对象,上面的Account就是fact.规则中可以对当前的对象进行任何的读写操作.
 ## 规则文件
 <pre><code>
-	import com.franco.demo.drools.Account
-
+import com.franco.demo.drools.Account
 rule "accountBalanceAtLeast"
   salience 3
   when
@@ -26,7 +24,6 @@ rule "accountBalanceAtLeast"
   then
   System.out.println("Warning! money running out!");
 end
-
 </pre></code>
 
 上面的代码中Account，就是可以  $account : Account( balance < 0 )的方式获取并判断比较。
@@ -44,8 +41,6 @@ use timeMillis:1
 # StatefulKnowledgeSession vs StatelessKnowledgeSession
 从字面理解就是有无状态的会话session,大家可以按照实际业务场景来使用。
 事实上，StatelessKnowledgeSession 对StatefulKnowledgeSession做了包装，使得在使用 StatelessKnowledgeSession 对象时不需要再调用 dispose()方法释放内存资源了。
-
-
 参考：
 http://benbenxiongyuan.iteye.com/blog/1121479
 http://stackoverflow.com/questions/17175037/droolsstateless-vs-stateful-knowledge-session
