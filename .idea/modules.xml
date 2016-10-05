@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/../drools_demo/drools_demo.iml" filepath="$PROJECT_DIR$/../drools_demo/drools_demo.iml" />
-      <module fileurl="file://$PROJECT_DIR$/redstar_drools.iml" filepath="$PROJECT_DIR$/redstar_drools.iml" />
+      <module fileurl="file://$PROJECT_DIR$/redstar_drool.iml" filepath="$PROJECT_DIR$/redstar_drool.iml" />
     </modules>
   </component>
 </project>

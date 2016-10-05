@@ -23,6 +23,7 @@ public class SubtractCouponFact   {
     private long now ;
 
 
+
     public long getNow() {
         return now;
     }

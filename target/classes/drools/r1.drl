@@ -1,0 +1,18 @@
+package demo
+import com.franco.demo.drools.Account
+
+rule "accountBalanceAtLeast"
+  salience 3
+  when
+  $account : Account( balance < 0 )
+  then
+  System.out.println("Warning! money running out!");
+end
+
+rule "accountBalanceAtLeast__1"
+  salience 2
+  when
+  $account : Account( balance < 30 )
+  then
+  System.out.println("Warning! money <30 out!");
+end

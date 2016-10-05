@@ -22,13 +22,11 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="true" />
-        <module name="drools_demo" />
-        <module name="redstar_drools" />
+        <module name="redstar_drool" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="drools_demo" target="1.7" />
-      <module name="redstar_drools" target="1.5" />
+    <bytecodeTargetLevel target="1.8">
+      <module name="redstar_drool" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>

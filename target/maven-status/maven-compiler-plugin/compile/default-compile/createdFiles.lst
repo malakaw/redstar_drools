@@ -1,0 +1,7 @@
+com/rs/demo/promotion/ComputeTask.class
+com/franco/demo/drools/coupon/CachCoupon.class
+com/franco/demo/drools/facts/SubtractCouponFact.class
+com/franco/demo/drools/coupon/Coupon.class
+com/franco/demo/drools/coupon/SubtractCoupon.class
+com/franco/demo/drools/CouponContext.class
+com/franco/demo/drools/Account.class

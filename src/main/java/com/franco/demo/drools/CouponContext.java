@@ -23,8 +23,8 @@ public class CouponContext {
             SubtractCoupon sc = new SubtractCoupon(begin_time,
                     end_time,
                     "coupon_1",
-                    new BigDecimal(100),
-                    new BigDecimal(90));
+                    new BigDecimal(300),
+                    new BigDecimal(30));
 
 
             MAP_COUPON.put("c1",sc);
