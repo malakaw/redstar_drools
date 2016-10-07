@@ -1,7 +1,15 @@
+com/rs/demo/promotion/PromotionSessions.class
+com/rs/demo/promotion/fact/CouponFact.class
+com/rs/demo/promotion/fact/coupon/EverySubtractCoupon.class
+com/franco/demo/drools/CouponContext.class
+com/franco/demo/drools/Account.class
+com/rs/demo/promotion/PromotionEngine.class
+com/rs/demo/promotion/fact/coupon/Coupon.class
+com/rs/demo/promotion/fact/coupon/LevelCoupon.class
 com/rs/demo/promotion/ComputeTask.class
+com/franco/demo/drools/Account2.class
 com/franco/demo/drools/coupon/CachCoupon.class
 com/franco/demo/drools/facts/SubtractCouponFact.class
 com/franco/demo/drools/coupon/Coupon.class
 com/franco/demo/drools/coupon/SubtractCoupon.class
-com/franco/demo/drools/CouponContext.class
-com/franco/demo/drools/Account.class
+com/rs/demo/promotion/fact/coupon/SubtractCoupon.class

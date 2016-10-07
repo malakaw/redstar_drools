@@ -1,0 +1,8 @@
+package demo
+import com.franco.demo.drools.Account2
+rule "jerry_accountBalanceAtLeast"
+  when
+  $account : Account2( balance < 100 )
+  then
+  System.out.println("[2]Warning! money running out!");
+end

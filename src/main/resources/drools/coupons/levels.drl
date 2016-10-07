@@ -1,0 +1,23 @@
+package demo
+import com.rs.demo.promotion.fact.coupon.LevelCoupon
+import java.math.BigDecimal
+
+
+rule "coupon_level"
+  no-loop false
+  when
+      //当前时间在优惠券活动期内并且是优惠金额还是0, 或则已经循环最多限定次数了
+      $c:LevelCoupon( now_time        >= begin_time          &&
+                      now_time        <= end_time             &&
+                      looped_count    < max_level
+                      && input_price  >= $c.getTrigerPrice($c.getLooped_count() )
+                     );
+  then
+      $c.setBenefit_price( $c.getPreferentialPrice($c.getLooped_count()));
+      $c.setLooped_count($c.getLooped_count() + 1);
+      update($c);
+
+end
+
+
+

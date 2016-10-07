@@ -2,9 +2,11 @@
 /Users/wengxiaojun/work/redstar/demo/redstar_drools/src/main/java/com/rs/demo/promotion/fact/CouponFact.java
 /Users/wengxiaojun/work/redstar/demo/redstar_drools/src/main/java/com/rs/demo/promotion/PromotionSessions.java
 /Users/wengxiaojun/work/redstar/demo/redstar_drools/src/main/java/com/franco/demo/drools/coupon/SubtractCoupon.java
+/Users/wengxiaojun/work/redstar/demo/redstar_drools/src/main/java/com/franco/demo/drools/Account2.java
 /Users/wengxiaojun/work/redstar/demo/redstar_drools/src/main/java/com/franco/demo/drools/coupon/Coupon.java
 /Users/wengxiaojun/work/redstar/demo/redstar_drools/src/main/java/com/rs/demo/promotion/fact/coupon/EverySubtractCoupon.java
 /Users/wengxiaojun/work/redstar/demo/redstar_drools/src/main/java/com/franco/demo/drools/Account.java
+/Users/wengxiaojun/work/redstar/demo/redstar_drools/src/main/java/com/rs/demo/promotion/fact/coupon/LevelCoupon.java
 /Users/wengxiaojun/work/redstar/demo/redstar_drools/src/main/java/com/rs/demo/promotion/PromotionEngine.java
 /Users/wengxiaojun/work/redstar/demo/redstar_drools/src/main/java/com/rs/demo/promotion/fact/coupon/Coupon.java
 /Users/wengxiaojun/work/redstar/demo/redstar_drools/src/main/java/com/rs/demo/promotion/fact/coupon/SubtractCoupon.java

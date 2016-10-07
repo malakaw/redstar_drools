@@ -1,0 +1,8 @@
+package demo
+import com.franco.demo.drools.Account2
+rule "tom_a1"
+  when
+  $account : Account2( balance > 0  )
+  then
+  System.out.println("[1],ok ,ok");
+end

@@ -1,0 +1,22 @@
+package demo
+import com.rs.demo.promotion.fact.coupon.EverySubtractCoupon
+import java.math.BigDecimal
+
+rule "coupon_subtract"
+  lock-on-active true
+  when
+      //当前时间在优惠券活动期内,并且满多少金额
+      $ec:EverySubtractCoupon(now_time >= begin_time       &&
+                              now_time <= end_time
+                              );
+  then
+       $ec.setBenefit_price($ec.getPreferential_price().multiply(
+                                                                new BigDecimal(
+                                                                                $ec.getInput_price().divide(
+                                                                                    $ec.getTrigger_price()
+                                                                                    ).intValue()
+                                                                                )
+                                                                )
+                           );
+
+end

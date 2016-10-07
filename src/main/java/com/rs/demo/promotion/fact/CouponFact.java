@@ -20,6 +20,7 @@ public class CouponFact {
     //每满减券
     private Map map_every_subtract_coupon = new TreeMap<BigDecimal,List<EverySubtractCoupon>>();
 
+
     public Map getMap_subtract_coupon() {
         return map_subtract_coupon;
     }
